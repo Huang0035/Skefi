@@ -20,7 +20,7 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 [https://github.com/yysijie/st-gcn]: Skeleton-Kinetics
 
  - Preprocess the data with
- - 
+
     `python data_gen/kinetics-gendata.py.`
 
  - Generate the bone data with: 
@@ -28,7 +28,8 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
     `python data_gen/gen_bone_data.py`
 
 2. For MM-Fi
-- Download the raw data from [MMFi_dataset](https://github.com/ybhbingo/MMFi_dataset).
+- Download the raw data from [MMFi_dataset](https://github.com/ybhbingo/MMFi_dataset), and follow the steps provided for data processing. You will end up with a series of .npz files.
+- Preprocess the data with
      
 # Training & Testing
 
