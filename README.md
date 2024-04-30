@@ -17,7 +17,6 @@ For Kinetics-Skeleton
             -kinetics_train_label.json
             -keintics_val_label.json
 
-[https://github.com/shahroudy/NTURGB-D]: NTU-RGB+D
 [https://github.com/yysijie/st-gcn]: Skeleton-Kinetics
 
  - Preprocess the data with
@@ -27,7 +26,6 @@ For Kinetics-Skeleton
  - Generate the bone data with: 
     
     `python data_gen/gen_bone_data.py`
-
 For MM-Fi
  -
      
