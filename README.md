@@ -21,7 +21,7 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 
  - Preprocess the data with
 
-    `python data_gen/kinetics-gendata.py.`
+    `python data_gen/kinetics-gendata.py`
 
  - Generate the bone data with
     
@@ -32,7 +32,7 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 
 - Preprocess the data with
 
-    `python data_gen/MMFi_data_process.py.`
+    `python data_gen/MMFi_data_process.py`
 
 - Generate the bone data with 
     
@@ -46,7 +46,7 @@ Change the config file depending on what you want.
 
     `python main.py --config ./config/Transfer/train_joint.yaml`
 
-If you want to do transfer learning, uncomment lines 250 to 257 in main.py.
+If you want to do transfer learning, uncomment lines 250 to 257 in `main.py`.
 
 # Contact
 For any questions, feel free to contact `E220035@e.ntu.edu.sg` or `syhuang1025@gmail.com`
