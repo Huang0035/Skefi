@@ -23,7 +23,7 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 
     `python data_gen/kinetics-gendata.py.`
 
- - Generate the bone data with: 
+ - Generate the bone data with
     
     `python data_gen/gen_bone_data.py`
 
@@ -34,47 +34,19 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 
     `python data_gen/MMFi_data_process.py.`
 
-- Generate the bone data with: 
+- Generate the bone data with 
     
     `python data_gen/MMFi_gendata.py`
 
-  and put them under the data directory.
-
-     
+  And put them under the data directory.
+ 
 # Training & Testing
 
 Change the config file depending on what you want.
 
+    `python main.py --config ./config/Transfer/train_joint.yaml`
 
-    `python main.py --config ./config/nturgbd-cross-view/train_joint.yaml`
+If you want to do transfer learning, uncomment lines 250 to 257 in main.py.
 
-    `python main.py --config ./config/nturgbd-cross-view/train_bone.yaml`
-To ensemble the results of joints and bones, run test firstly to generate the scores of the softmax layer. 
-
-    `python main.py --config ./config/nturgbd-cross-view/test_joint.yaml`
-
-    `python main.py --config ./config/nturgbd-cross-view/test_bone.yaml`
-
-Then combine the generated scores with: 
-
-    `python ensemble.py` --datasets ntu/xview
-     
-# Citation
-Please cite the following paper if you use this repository in your reseach.
-
-    @inproceedings{2sagcn2019cvpr,  
-          title     = {Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition},  
-          author    = {Lei Shi and Yifan Zhang and Jian Cheng and Hanqing Lu},  
-          booktitle = {CVPR},  
-          year      = {2019},  
-    }
-    
-    @article{shi_skeleton-based_2019,
-        title = {Skeleton-{Based} {Action} {Recognition} with {Multi}-{Stream} {Adaptive} {Graph} {Convolutional} {Networks}},
-        journal = {arXiv:1912.06971 [cs]},
-        author = {Shi, Lei and Zhang, Yifan and Cheng, Jian and LU, Hanqing},
-        month = dec,
-        year = {2019},
-	}
 # Contact
-For any questions, feel free to contact: `lei.shi@nlpr.ia.ac.cn`
+For any questions, feel free to contact `E220035@e.ntu.edu.sg` or `syhuang1025@gmail.com`
