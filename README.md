@@ -5,7 +5,7 @@ SkeFi: Cross-Modal Knowledge Transfer for Wireless Skeleton-Based Action Recogni
 Pytorch0 >= 0.4. (version 1.12.1 is used)
 
 # Data Preparation
-
+For Kinetics-Skeleton
  - Download the raw data from [Skeleton-Kinetics](https://github.com/yysijie/st-gcn). Then put them under the data directory:
  
         -data\  
