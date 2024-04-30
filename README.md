@@ -21,14 +21,15 @@ For Kinetics-Skeleton
 [https://github.com/yysijie/st-gcn]: Skeleton-Kinetics
 
  - Preprocess the data with
-  
-    `python data_gen/ntu_gendata.py`
-    
+ - 
     `python data_gen/kinetics-gendata.py.`
 
  - Generate the bone data with: 
     
     `python data_gen/gen_bone_data.py`
+
+For MM-Fi
+ -
      
 # Training & Testing
 
