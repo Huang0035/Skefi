@@ -6,7 +6,7 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 
 # Data Preparation
 1. For Kinetics-Skeleton
- - Download the raw data from [Skeleton-Kinetics](https://github.com/yysijie/st-gcn). Then put them under the data directory:
+ - Download the raw data from [Skeleton-Kinetics](https://github.com/yysijie/st-gcn). Then, put them under the data directory:
  
         -data\  
           -kinetics_raw\  
@@ -40,13 +40,13 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
 
   And put them under the data directory.
  
-# Training & Testing
+# Normal Training & Transfer Learning
 
 Change the config file depending on what you want.
 
     `python main.py --config ./config/Transfer/train_joint.yaml`
 
-If you want to do transfer learning, uncomment lines 250 to 257 in `main.py`.
+If you want to do transfer learning, uncomment lines 250 to 257 in `main.py`. You can also download a pre-trained model from [GoogleDrive](https://drive.google.com/drive/folders/1BZSBjcGVjpPXFKBJA0H6bB_x1HeSgpG-?usp=sharing) to skip Kinetics-Skeleton training.
 
 # Contact
 For any questions, feel free to contact `E220035@e.ntu.edu.sg` or `syhuang1025@gmail.com`
