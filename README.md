@@ -48,7 +48,8 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
               ...
             -kinetics_train_label.json
             -keintics_val_label.json
-          -DS_XXX\
+          -DS_RGB_19\  #Default in data file
+          -Your data
  
 # Normal Training & Transfer Learning
 
