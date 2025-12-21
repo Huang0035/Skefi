@@ -39,6 +39,16 @@ Pytorch0 >= 0.4. (version 1.12.1 is used)
     `python data_gen/MMFi_gendata.py`
 
   And put them under the data directory.
+
+        -data\  
+          -kinetics_raw\  
+            -kinetics_train\
+              ...
+            -kinetics_val\
+              ...
+            -kinetics_train_label.json
+            -keintics_val_label.json
+          -DS_XXX\
  
 # Normal Training & Transfer Learning
 
