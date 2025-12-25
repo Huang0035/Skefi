@@ -1,0 +1,41 @@
+work_dir: ./work_dir/Transfer/agcn
+model_saved_name: ./runs/Transfer/agcn/RGB
+
+# feeder
+feeder: feeders.feeder.Feeder
+train_feeder_args: 
+  random_choose: True
+  random_move: True
+  window_size: 40
+  data_path: ./data/DS_RGB_19/train_data_joint.npy
+  label_path: ./data/DS_RGB_19/train_label.pkl
+  debug: False
+
+test_feeder_args:
+  data_path: ./data/DS_RGB_19/val_data_joint.npy
+  label_path: ./data/DS_RGB_19/val_label.pkl
+
+# model
+model: model.AGCN.Model
+model_args:
+  num_class: 27
+  num_person: 2
+  num_point: 18
+  graph: graph.DS.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.05
+step: [5, 10, 15]
+
+# training
+device: [0]
+batch_size: 16
+test_batch_size: 16
+num_epoch: 20
+nesterov: True
+warm_up_epoch: 0
+weights: ./pt/AGCN.pt
+
