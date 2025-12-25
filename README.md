@@ -60,4 +60,4 @@ Change the config file depending on what you want.
 If you want to do transfer learning, uncomment lines 250 to 257 in `main.py`. You can also download a pre-trained model from [GoogleDrive](https://drive.google.com/drive/folders/1BZSBjcGVjpPXFKBJA0H6bB_x1HeSgpG-?usp=sharing) to skip Kinetics-Skeleton training.
 
 # Contact
-For any questions, feel free to contact `E220035@e.ntu.edu.sg` or `syhuang1025@gmail.com`
+For any questions, feel free to contact `syhuang1025@gmail.com` or `E220035@e.ntu.edu.sg`
